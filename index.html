@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Inventory Shop - 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" viewBox="0 0 24 24">
+            <path d="M12 17.5C9.5 17.5 7.5 15.5 7.5 13S9.5 8.5 12 8.5 16.5 10.5 16.5 13 14.5 17.5 12 17.5M12 7C8.7 7 6 9.7 6 13S8.7 19 12 19 18 16.3 18 13 15.3 7 12 7M12 2L14.4 6.4L19 5.7L16.2 9.8L18.6 14L14 12.7L9.4 14L11.8 9.8L9 5.7L13.6 6.4L12 2Z"/>
+        </svg>
+        <svg class="moon-icon" style="display: none;" viewBox="0 0 24 24">
+            <path d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z"/>
+        </svg>
+    </button>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">✨ Modern Inventory</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-list.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+                <li><a href="admin-login.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero fade-in">
+            <h1>Welcome to Modern Inventory</h1>
+            <p>Discover our curated collection of premium products with cutting-edge 2025 design</p>
+            <div class="hero-buttons">
+                <a href="product-list.html" class="btn btn-primary">View Products</a>
+                <a href="#features" class="btn btn-outline">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features mt-4">
+            <div class="feature-grid">
+                <div class="glass-card p-4 text-center fade-in">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Fast & Modern</h3>
+                    <p>Experience lightning-fast browsing with our optimized 2025 technology</p>
+                </div>
+                <div class="glass-card p-4 text-center fade-in">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Secure Shopping</h3>
+                    <p>Your data is protected with enterprise-grade security measures</p>
+                </div>
+                <div class="glass-card p-4 text-center fade-in">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Beautiful Design</h3>
+                    <p>Enjoy our stunning glassmorphism interface with smooth animations</p>
+                </div>
+                <div class="glass-card p-4 text-center fade-in">
+                    <div class="feature-icon">📱</div>
+                    <h3>Fully Responsive</h3>
+                    <p>Shop seamlessly on any device with our mobile-first design</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats mt-4">
+            <div class="stats-grid">
+                <div class="glass-card p-4 text-center">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Products Available</div>
+                </div>
+                <div class="glass-card p-4 text-center">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="glass-card p-4 text-center">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Hour Support</div>
+                </div>
+                <div class="glass-card p-4 text-center">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta mt-4">
+            <div class="glass-card p-4 text-center">
+                <h2>Ready to Start Shopping?</h2>
+                <p>Join thousands of satisfied customers who trust Modern Inventory</p>
+                <a href="product-list.html" class="btn btn-primary mt-2">Start Shopping Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass-card mt-4 p-4 text-center">
+        <p>&copy; 2025 Modern Inventory. All rights reserved. Made with ❤️ using cutting-edge technology.</p>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toastContainer"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize cart count on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartCount();
+            animateStats();
+            initializeAnimations();
+        });
+
+        // Animate statistics numbers
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = parseInt(entry.target.getAttribute('data-target'));
+                        animateNumber(entry.target, target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+
+            statNumbers.forEach(stat => observer.observe(stat));
+        }
+
+        function animateNumber(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current);
+            }, 20);
+        }
+
+        // Initialize scroll animations
+        function initializeAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        }
+    </script>
+
+    <style>
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea 0%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .feature-grid,
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
